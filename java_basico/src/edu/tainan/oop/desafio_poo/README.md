@@ -14,12 +14,12 @@ Neste desafio, modelei a representação UML do componente iPhone, abrangendo su
 
 ### Funcionalidades
 
-- [Aparelho Telefonico](AparelhoTelefonico.java)
-- [NavegadornaInternet](NavegadornaInternet.java)
-- [ReprodutorMusical](ReprodutorMusical.java)
+- [Aparelho Telefonico](/java_basico/src/edu/tainan/oop/desafio_poo/iphone/AparelhoTelefonico.java)
+- [NavegadornaInternet](/java_basico/src/edu/tainan/oop/desafio_poo/iphone/NavegadornaInternet.java)
+- [ReprodutorMusical](/java_basico/src/edu/tainan/oop/desafio_poo/iphone/ReprodutorMusical.java)
 
 ### Representação do iPhone
-- [Iphone](Iphone.java)
+- [Iphone](/java_basico/src/edu/tainan/oop/desafio_poo/iphone/Iphone.java)
 
 ### Usuario
-- [Usuario](Usuario.java)
+- [Usuario](/java_basico/src/edu/tainan/oop/desafio_poo/iphone/Usuario.java)
