@@ -1,4 +1,4 @@
-package edu.tainan.collections.map_pesquisa;
+package edu.tainan.collections.set_pesquisa;
 
 public class Tarefa {
     
