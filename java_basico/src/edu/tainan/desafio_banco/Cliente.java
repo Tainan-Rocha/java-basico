@@ -6,8 +6,8 @@ import java.util.List;
 public class Cliente {
     
     // Atributos 
-    public String nome;
-    public List <Conta> conta = new ArrayList<>();
+    private String nome;
+    private List <Conta> conta = new ArrayList<>();
 
     // Construtor
     public Cliente(String nome) {
@@ -21,7 +21,7 @@ public class Cliente {
     }
 
     // Mostrar dados da conta
-    public void minhaConta() {
+    public void exibirDadosConta() {
         System.out.println("Dados da minha conta: ");
         for (Conta dados : conta) {
             System.out.println("Titular: " + nome);

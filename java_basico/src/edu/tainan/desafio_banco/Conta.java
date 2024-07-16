@@ -34,49 +34,46 @@ public abstract class Conta {
         if (valorDeposito > 0) {
             saldo += valorDeposito;
             System.out.println("Deposito realizado com sucesso!");
-            Extrato();
         }
         else {
             System.out.println("Valor do deposito precisa ser maior que R$0,00");
         }
+        exibirExtrato();
     }
 
     // Metodo para depositar valor na conta
-    public void sacar(double valorSacar) {
-        if (valorSacar > saldo) {
+    public void sacar(double valorSaque) {
+        if (valorSaque > saldo) {
             System.out.println("Saldo insuficiente para saque!");
-            Extrato();
         }
-        else if (valorSacar > 0) {
-            saldo -= valorSacar;
+        else if (valorSaque > 0) {
+            saldo -= valorSaque;
             System.out.println("Saque realizado com sucesso!");
-            Extrato();
         }
         else {
             System.out.println("Valor do saque precisa ser maior que R$0,00");
         }
+        exibirExtrato();
     }
 
     // Metodo para depositar valor na conta
-    public void transferir(double valor_transferencia, Conta numerConta) {
-        if (valor_transferencia > saldo) {
+    public void transferir(double valorTransferencia, Conta contaDestino) {
+        if (valorTransferencia > saldo) {
             System.out.println("Saldo insuficiente para transferencia!");
-            Extrato();
         }
-        else if (valor_transferencia > 0) {
-            this.sacar(valor_transferencia);
-            numerConta.depositar(valor_transferencia);
+        else if (valorTransferencia > 0) {
+            this.sacar(valorTransferencia);
+            contaDestino.depositar(valorTransferencia);
             System.out.println("Transferencia realizada com sucesso!");
-            Extrato();
         }
         else {
             System.out.println("Valor da transferencia precisa ser maior que R$0,00");
         }
-        
+        exibirExtrato();
     }
 
     // Metodo para imprimir saldo da conta
-    public void Extrato() {
+    public void exibirExtrato() {
         System.out.println("Saldo atual: R$" + saldo);
     }
 

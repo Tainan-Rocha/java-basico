@@ -29,7 +29,7 @@ public class Main {
         conta1.transferir(250, conta2);
 
         // Informacoes da conta
-        cliente1.minhaConta();
-        cliente2.minhaConta();
+        cliente1.exibirDadosConta();
+        cliente2.exibirDadosConta();
     }
 }
